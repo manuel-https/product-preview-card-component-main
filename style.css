@@ -53,6 +53,11 @@ button {
   }
 }
 
+button:hover {
+  background-color: hsl(158, 42%, 18%);
+  cursor: pointer;
+}
+
 h1 {
   font-family: "Fraunces";
   font-weight: 700;
