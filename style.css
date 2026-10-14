@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(https://fonts.google.comcom/specimen/Montserrat);
+}
+@font-face {
+  font-family: Fraunces;
+  src: url(https://fonts.google.com/specimen/Fraunces);
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+img {
+  width: 100%;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  width: 40rem;
+  border-radius: 1rem;
+  height: 30rem;
+}
+
+button {
+  padding-block: 15px;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  width: 100%;
+  font-weight: 700;
+
+  img {
+    width: 15px;
+  }
+}
+
+h1 {
+  font-family: "Fraunces";
+  font-weight: 700;
+  line-height: 1.1;
+  text-wrap: balance;
+  margin-block: 1.5rem;
+}
+
+p {
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  font-size: small;
+  line-height: 1.4rem;
+  text-wrap: balance;
+}
+
+.img-container {
+  height: 100%;
+  width: 50%;
+}
+
+.main-img {
+  height: 100%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.main-topic {
+  width: 50%;
+  padding: 2rem;
+}
+
+.new-price {
+  font-family: "Fraunces";
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  font-size: 2rem;
+}
+
+.old-price {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.8rem;
+}
+
+.perfume {
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 7px;
+  font-size: 0.625rem;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+@media (width < 450px) {
+  main {
+    flex-direction: column;
+    margin-inline: 1rem;
+    height: 50rem;
+  }
+  .main-img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    height: auto;
+  }
+
+  .img-container {
+    width: 100%;
+  }
+
+  .main-topic {
+    width: 100%;
+  }
+}
